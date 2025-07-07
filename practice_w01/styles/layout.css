@@ -1,0 +1,93 @@
+:root {
+  --basic-font-size: 27px;
+  --alternate-font-size: 23px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+  min-height: 100vh;
+}
+
+.wrapper {
+  display: contents; /* Let grid areas apply directly to children */
+}
+
+.page-header {
+  grid-area: header;
+  background-color: rgb(60, 60, 60);
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 7rem;
+  text-align: left;
+  font-size: var(--basic-font-size);
+}
+
+.heading-links {
+  grid-area: nav;
+  background-color: black;
+  height: 5rem;
+  text-align: center;
+  font-size: 2.1rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heading-links a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  flex: 1;
+  font-size: var(--alternate-font-size);
+  display: flex;
+  height: auto;
+}
+
+main .main-content {
+  flex: 2;
+  background-color: #b4b4b4;
+  color: rgb(33, 33, 33);
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+main .aside-content {
+  flex: 1;
+  background-color: #ffffff;
+  color: #868686;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+footer {
+  grid-area: footer;
+  width: 100%;
+  font-size: var(--alternate-font-size);
+  padding: 2rem 0 5rem 0;
+  text-align: center;
+  color: white;
+  background-color: rgb(60, 60, 60);
+}
