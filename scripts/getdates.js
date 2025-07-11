@@ -3,13 +3,15 @@ const full = document.querySelector("#full");
 const worldfull = document.querySelector("#world-full");
 const short = document.querySelector("#short");
 const medium = document.querySelector("#medium");
-const year = document.querySelector("#year");
 const month = document.querySelector("#month");
 const day = document.querySelector("#day");
 const dayofweek = document.querySelector("#dayofweek");
 
 const lastModified = document.querySelector("#short");
 lastModified.innerHTML = document.lastModified;
+const year = document.querySelector("#year");
+console.log("Found year element:", year); // For debugging
+year.textContent = new Date().getFullYear();
 
 // use the date object
 const today = new Date();
