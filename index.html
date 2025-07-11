@@ -11,7 +11,7 @@
         of useful links (chosen by the instructor)." />
     <meta author="Ethan Long">
     <link rel="stylesheet" href="styles/base.css">
-    <!--Add script reference here-->
+    <script src="scripts/getdates.js" defer></script>
     <title>WDD 131 - Dynamic Web Fundamentals - Ethan Long</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,22 +78,19 @@
                     </li>
                 </ul>
             </nav>
-            
+
             <!-- images like the following two:
             <img src="images/filler2.jpg" alt="Image TBD">
             <img src="images/filler3.jpg" alt="Image TBD">-->
         </section>
     </main>
     <footer>
-        <p>
-            &copy
-            <span id="currentyear"></span>
-            Ethan Long | 
-            California, US
-        </p>
-        <p id="lastModified">
-            
-        </p>
+      <p>
+        &copy; <span id="year"></span> Ethan Long | California, US
+      </p>
+      <p id="lastModified">
+        Last Modification: <span id="short"></span>
+      </p>
     </footer>
 </body>
 </html>
