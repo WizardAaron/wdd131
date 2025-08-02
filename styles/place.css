@@ -1,0 +1,241 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #c10909;
+    --accent-color: #d4d4d4;
+    --text-color: #333;
+    --border-color: #969696;
+    --border-color-2: #c10909;
+    --text-font: "Merriweather", serif;
+    --heading-font: "Roboto Slab", serif;
+}
+
+header {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 2rem;
+    border-bottom: 10px solid var(--border-color-2);
+}
+
+/* Body styling */
+body {
+    font-family: var(--text-font);
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+/* Main container */
+main {
+    background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    position: relative;
+}
+
+.hero picture {
+    display: block;
+    width: 100%;
+    border-bottom: var(--border-color-2) 10px solid;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--border-color-2);
+    padding-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    text-align: center;
+}
+
+/* Add sun SVG to Weather heading in mobile view */
+.card:last-of-type h2::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 2em;
+    margin: 0.5em auto 0 auto;
+    background-image: url('../images/summer-sun.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.card li:last-child {
+    border-bottom: none;
+}
+
+@media screen and (min-width: 1050px) {
+    header {
+        font-size: 3rem;
+    }
+    
+    .hero {
+        position: relative;
+    }
+
+    .hero .card {
+        position: absolute;
+        width: 300px;
+        margin: 0;
+        z-index: 1;
+        padding: 0;
+        opacity: 0.9;
+    }
+
+    .hero .card h2 {
+        background-color: var(--secondary-color);
+        color: white;
+        margin: 10px 15px 0 -15px;
+        padding: 15px 20px 15px 35px;
+        border-bottom: none;
+        border-radius: 10px;
+        text-align: left;
+        position: relative;
+    }
+
+    .hero .card ul {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .hero .card:first-of-type {
+        top: 20px;
+        left: 20px;
+    }
+
+    .hero .card:last-of-type {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .hero .card:last-of-type h2::after {
+        content: " ☀️";
+        display: inline;
+        background-image: none;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .card h2 {
+        text-align: left;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1049px) {
+    header {
+        font-size: 3rem;
+    }
+    
+    .hero {
+        position: relative;
+    }
+
+    .hero .card {
+        position: absolute;
+        width: 400px;
+        margin: 0;
+        z-index: 1;
+        padding: 0;
+        opacity: 0.9;
+    }
+
+    .hero .card h2 {
+        background-color: var(--secondary-color);
+        color: white;
+        margin: 10px 15px 0 -15px;
+        padding: 15px 20px 15px 35px;
+        border-bottom: none;
+        border-radius: 10px;
+        text-align: left;
+        position: relative;
+    }
+
+    .hero .card ul {
+        padding: 20px;
+        margin: 0;
+    }
+
+    .hero .card:first-of-type {
+        top: 20px;
+        left: 20px;
+    }
+
+    .hero .card:last-of-type {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .hero .card:last-of-type h2::after {
+        content: " ☀️";
+        display: inline;
+        background-image: none;
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+
+    .card h2 {
+        text-align: left;
+    }
+
+    footer {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-top: 10px solid var(--border-color-2);
+}

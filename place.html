@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <title>California</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>California</p>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/goldengatebridge-wider.webp">
+                <source media="(min-width: 100px)" srcset="images/goldengatebridge-mobile.webp">
+                <img src="images/goldengatebridge-mobile.webp" alt="Golden Gate Bridge">
+            </picture>
+            <section class="card">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 163,696 square miles</li>
+                    <li>Population: 39.4 million (2024 estimate)</li>
+                    <li>Capital: Sacramento</li>
+                    <li>Languages: English (58.8%), Spanish (28.5%), Chinese, Tagalog, Vietnamese, Korean, Armenian, Persian, and over 200 others</li>
+                    <li>Currency: United States Dollar (USD)</li>
+                    <li>Time Zone: Pacific Time (UTC&minus;8 standard / UTC&minus;7 daylight)</li>
+                    <li>Calling Code: +1</li>
+                    <li>Internet TLD: .us (national), .ca.gov (state government)</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Weather</h2>
+                <ul>
+                    <li>Temperature: 63°F (Feels like 61°F)</li>
+                    <li>Conditions: Mostly Sunny</li>
+                    <li>Wind: West at 18 mph</li>
+                    <li>Wind Chill: <span id="wind-chill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Ethan Long | California, US
+      </p>
+      <p id="lastModified">
+        Last Modification: <span id="short"></span>
+      </p>
+    </footer>
+</body>
+</html>
