@@ -1,0 +1,26 @@
+My WDD131 Project: Minecraft Java Edition Modding Website
+
+Site Title: Quality of JavaMC
+
+The subject I want to make the website about is Minecraft Java Edition Modding.
+
+I'll a home page explaining the purpose of the site, which is to provide users with Minecraft mods and modpacks that provide quality-of-life improvements. 
+I'll have a second page where people can commission their own mods to be made.
+I'll have a third page to help users find popular quality-of-life mods and modpacks with links to download mods.
+
+General Page Formatting:
+- Each webpage will have a mobile view and a wider screen view
+- On mobile, the different page options will be put in a hamburger menu (might have a different symbol)
+- On wider screens, the page options will be listed below the page title
+- Each page will have the same header and footer
+- Top left of Header will include a svg logo/icon
+- Footer will include the last time the site was updated
+
+Specific Page Formatting:
+- [Home] page will have a hero image for mobile, and a different hero image for wider screen view
+- [Commission Mods] page will have (fake) contact info for people to commission mods to be made
+- [Find Mods] page will have a selection of popular quality-of-life Minecraft mods and modpacks that the user can click and be directed to their mod page
+
+ 
+
+The reason that I chose this subject is because for a long time I have has a passion for compiling Minecraft Java Edition modpacks and more recently, even creating Minecraft Java Edition mods! This project is about a subject I am passionate about, and think would be fun to make!
