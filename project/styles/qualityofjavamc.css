@@ -1,0 +1,302 @@
+:root{
+    --max-width: 1000px;
+    --primary-color: #66300C;
+    --secondary-color: #079500;
+    --accent-color: #d3bfb2;
+    --accent2-color: #b4ceb2;
+    --footer-color: #515151;
+    --text-font: "Merriweather", serif;
+    --heading-font: "Roboto Slab", serif;
+    --text-color: #2b1506;
+    --border1: 1px solid #2b1506;
+    --border2: 1.5px solid #2b1506;
+    --border3: 2px solid #2b1506;
+	--border-radius: 1rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	background-color: var(--primary-color);
+}
+
+h1 {
+	text-align: center;
+	font-family: var(--heading-font);
+	font-size: 1.25rem;
+    padding-top: 1rem;
+}
+
+.header-content h1 {
+    padding-top: 0;
+    margin: 0;
+    color: white;
+}
+
+h2 {
+	font-family: var(--heading-font);
+    font-size: 1.125rem;
+	color: var(--text-color);
+	text-align: center;
+	margin: 1rem;
+}
+
+h3 {
+	font-family: var(--heading-font);
+    font-size: 1rem;
+	color: var(--text-color);
+	text-align: center;
+	margin: 1rem;
+}
+
+nav {
+	width: 100%;
+	margin: 0;
+}
+
+header {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem 0 0 0;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    max-width: 100px;
+    padding: 0;
+}
+
+#siteplan {
+    padding: 1rem;
+    background-color: var(--accent-color);
+    border: var(--border1);
+    border-radius: var(--border-radius);
+    margin: 1rem;
+}
+
+#siteplan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#siteplan li {
+    margin: 0.5rem 0;
+}
+
+/* small view page navigation */
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+	content: "X";
+    color: white;
+}
+
+main {
+    background-color: var(--primary-color);
+    flex: 1;
+    padding: 1rem 0;
+}
+
+.pages {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: var(--text-color);
+	color: #fff;
+	width: 100%;
+	margin: 0;
+}
+
+.pages a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+    font-weight: 700;
+	text-decoration: none;
+	color: #fff;
+}
+.pages a:hover {
+	background-color: var(--primary-color);
+	color: #fff;
+	font-weight: 900;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "> ";  /* just a wayfinding symbol for the user */
+}
+
+.active::after {
+    content: " <";
+}
+
+img {
+  max-width: 300px;
+  max-height: 200px;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+}
+
+/* Wireframe images need larger dimensions */
+#siteplan img {
+  max-width: 100%;
+  max-height: none;
+  width: 100%;
+  height: auto;
+  padding: 0.5rem;
+  border: var(--border1);
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.wireframe-section {
+  margin-bottom: 2rem;
+}
+
+.wireframe-section h3 {
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+/* Grid layout for wireframe images */
+.wireframe-section {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column on mobile */
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.wireframe-section h3 {
+  grid-column: 1 / 2; /* Span across single column on mobile */
+  font-family: var(--heading-font);
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+footer {
+    background-color: var(--footer-color);
+    color: white;
+    padding: 1rem;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  margin-bottom: 0.5rem; /* optional spacing */
+  font-size: 0.9rem;  /* optional styling */
+}
+
+@media (min-width: 37.5em) {
+	h1 {
+		font-size: 2.5rem;
+		margin-left: 0;
+		text-align: center;
+	}
+	
+	h2 {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.header-content {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.logo {
+		height: 50px;
+		max-width: 50px;
+	}
+
+	/* Larger wireframes on tablet/desktop */
+	#siteplan img {
+		max-width: 100%;
+		margin: 0;
+		display: block;
+	}
+
+	/* Keep 3-column grid on larger screens */
+	.wireframe-section {
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1.5rem;
+	}
+
+	.wireframe-section h3 {
+		grid-column: 1 / 4; /* Span across all 3 columns on larger screens */
+	}
+
+    #mod-card-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1rem !important;
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 auto 1rem auto;
+        padding: 0 1rem;
+    }
+
+    .mod-card {
+        margin: 0;
+    }
+
+	#menu {
+		display: none; /* hide hamburger button */
+	}
+
+	.pages {
+		flex-direction: row;
+	}
+
+	.pages a {
+		display: block;
+		flex: 1 1 100%;
+	}
+}
+
+
