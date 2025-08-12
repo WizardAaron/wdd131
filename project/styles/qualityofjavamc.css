@@ -89,7 +89,7 @@ header {
     padding: 0;
 }
 
-#siteplan {
+.siteplan-section {
     padding: 1rem;
     background-color: var(--accent-color);
     border: var(--border1);
@@ -97,12 +97,12 @@ header {
     margin: 1rem;
 }
 
-#siteplan ul {
+.siteplan-section ul {
     list-style-type: none;
     padding: 0;
 }
 
-#siteplan li {
+.siteplan-section li {
     margin: 0.5rem 0;
 }
 
@@ -180,7 +180,7 @@ img {
 }
 
 /* Wireframe images need larger dimensions */
-#siteplan img {
+#wireframes img {
   max-width: 100%;
   max-height: none;
   width: 100%;
@@ -255,7 +255,7 @@ figcaption {
 	}
 
 	/* Larger wireframes on tablet/desktop */
-	#siteplan img {
+	#wireframes img {
 		max-width: 100%;
 		margin: 0;
 		display: block;
