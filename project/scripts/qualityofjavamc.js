@@ -40,14 +40,14 @@ const mods = [
         modName: "JEI (Just Enough Items)",
         creator: "mezz",
         minecraftVersions: "1.8, 1.8.8-1.8.9, 1.9, 1.9.4, 1.10, 1.10.2, 1.11, 1.11.2, 1.12.x, 1.13.2, 1.14.2-1.14.4, 1.15.1-1.15.2, 1.16.1-1.16.5, 1.17.1, 1.18.x, 1.19.x, 1.20-1.20.2, 1.20.4, 1.20.6, 1.21-1.21.1, 1.21.4-1.21.5, 1.21.7-1.21.8",
-        imageUrl: "images/justenoughitems.jpg",
+        imageUrl: "images/just-enough-items.jpg",
         modPageUrl: "https://modrinth.com/mod/jei/gallery"
     },
     {
         modName: "Biomes O' Plenty",
         creator: "Forstride, Adubbz",
         minecraftVersions: "1.7.10, 1.8, 1.8.8-1.8.9, 1.9, 1.9.4, 1.10, 1.10.2, 1.11, 1.11.2, 1.12.x, 1.13.2, 1.14.3-1.14.4, 1.15.1-1.15.2, 1.16.1, 1.16.3-1.16.5, 1.17.1, 1.18.1-1.18.2, 1.19.x, 1.20-1.20.2, 1.20.4, 1.20.6, 1.21-1.21.1, 1.21.3-1.21.8",
-        imageUrl: "images/biomesoplenty.png",
+        imageUrl: "images/biomes-o-plenty.png",
         modPageUrl: "https://modrinth.com/mod/biomes-o-plenty"
     },
     {
@@ -61,21 +61,21 @@ const mods = [
         modName: "Vanilla Perfected",
         creator: "demonjoeTV",
         minecraftVersions: "1.20.1, 1.21-1.21.1, 1.21.4-1.21.6, 1.21.8",
-        imageUrl: "images/vanillaperfected.png",
+        imageUrl: "images/vanilla-perfected.png",
         modPageUrl: "https://modrinth.com/modpack/vanilla-perfected"
     },
     {
         modName: "Better MC",
         creator: "Luna Pixel Studios",
         minecraftVersions: "Depends on the mod version.",
-        imageUrl: "images/bettermc.jpg",
+        imageUrl: "images/better-mc.jpg",
         modPageUrl: "https://modrinth.com/modpack/better-mc-fabric-bmc3"
     },
     {
         modName: "Fabulously Optimized",
         creator: "Fabulously Optimized",
         minecraftVersions: "1.16.5, 1.17.1, 1.18.1-1.18.2, 1.19.x, 1.20.x, 1.21.x",
-        imageUrl: "images/fabulouslyoptimized.jpg",
+        imageUrl: "images/fabulously-optimized.jpg",
         modPageUrl: "https://modrinth.com/modpack/fabulously-optimized"
     }
 ];
