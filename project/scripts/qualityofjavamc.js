@@ -3,10 +3,35 @@ const hamButton = document.querySelector("#menu");
 const pages = document.querySelector(".pages");
 const header = document.querySelector("header");
 
+// Load menu state from localStorage on page load
+function loadMenuState() {
+    const menuState = localStorage.getItem('menuOpen');
+    if (menuState === 'true') {
+        pages.classList.add("open");
+        hamButton.classList.add("open");
+        header.classList.add("menu-open");
+    }
+}
+
+// Save menu state to localStorage
+function saveMenuState(isOpen) {
+    localStorage.setItem('menuOpen', isOpen.toString());
+}
+
+// Initialize menu state when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    loadMenuState();
+});
+
 hamButton.addEventListener("click", () => {
-	pages.classList.toggle("open");
-	hamButton.classList.toggle("open");
-	header.classList.toggle("menu-open"); // Add menu-open class to header
+    const isCurrentlyOpen = pages.classList.contains("open");
+    
+    pages.classList.toggle("open");
+    hamButton.classList.toggle("open");
+    header.classList.toggle("menu-open");
+    
+    // Save the new state (opposite of current state)
+    saveMenuState(!isCurrentlyOpen);
 });
 
 // Mod data array
