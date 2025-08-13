@@ -304,3 +304,203 @@ input:required:valid,
 select:required:valid {
     border-left: 4px solid var(--success-color);
 }
+
+/* ===== review.html stuff ===== */
+
+/* Confirmation message */
+.confirmation-message {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.confirmation-message h2 {
+    color: var(--success-color);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.confirmation-message .subtitle {
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Review summary styling */
+.review-summary {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: var(--border-radius);
+    text-align: left;
+    border: 1px solid var(--border-color);
+}
+
+.review-summary h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.review-summary ul {
+    list-style: none;
+}
+
+.review-summary li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid var(--secondary-color);
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.review-summary li:hover {
+    transform: translateX(5px);
+}
+
+.review-summary li strong {
+    color: var(--primary-color);
+    display: inline-block;
+    min-width: 120px;
+    margin-right: 1rem;
+}
+
+.review-summary li span {
+    color: var(--text-color);
+}
+
+/* Review counter styling */
+.review-counter {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--secondary-color), #7d3c98);
+    color: white;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.review-counter h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.review-counter span {
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* Back link styling */
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--border-radius);
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.back-link:hover {
+    background-color: #34495e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-link:active {
+    transform: translateY(0);
+}
+
+/* Success icon */
+.success-icon {
+    font-size: 3rem;
+    color: var(--success-color);
+    margin-bottom: 1rem;
+}
+
+/* Loading animation for dynamic content */
+.loading {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(142, 68, 173, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--secondary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Error state styling */
+.error-message {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Accessibility improvements */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Additional responsive design for review page elements */
+@media (max-width: 768px) {
+    .confirmation-message {
+        padding: 2rem 1rem;
+    }
+    
+    .review-summary {
+        padding: 1rem;
+    }
+    
+    .review-summary li {
+        padding: 0.75rem;
+    }
+    
+    .review-summary li strong {
+        display: block;
+        margin-bottom: 0.5rem;
+        min-width: auto;
+    }
+    
+    .confirmation-message h2 {
+        font-size: 1.5rem;
+    }
+}
